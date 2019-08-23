@@ -17,6 +17,6 @@ import com.zjiang.springboot.dto.UserPlus;
  * ====================================================================<br>
  */
 @Mapper
-public interface UserPlusMapper extends BaseMapper<UserPlus> {
+public interface  UserPlusMapper extends BaseMapper<UserPlus> {
 
 }
