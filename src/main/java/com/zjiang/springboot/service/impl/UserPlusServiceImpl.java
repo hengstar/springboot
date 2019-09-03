@@ -27,7 +27,7 @@ import com.zjiang.springboot.service.IUserPlusService;
 @Service
 public class UserPlusServiceImpl implements IUserPlusService {
 
-    @Autowired
+    @Autowired(required = false)
     UserPlusMapper usermapper;
 
     @Override

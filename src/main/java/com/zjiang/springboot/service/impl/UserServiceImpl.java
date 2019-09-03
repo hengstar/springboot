@@ -10,7 +10,7 @@ import com.zjiang.springboot.service.IUserService;
 @Service
 public class UserServiceImpl implements IUserService {
 
-    @Autowired
+    @Autowired(required = false)
     UserMapper usermapper;
     @Override
     public User selectById(Integer id) {
