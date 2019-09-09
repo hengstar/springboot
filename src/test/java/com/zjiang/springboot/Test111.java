@@ -26,15 +26,7 @@ public class Test111 {
         list.add(b);
         list.add(c);
         list.add(d);
-        Boolean bz = true;
-        for (String str : list) {
-            str = str.substring(2, 5).replaceAll("_", "");
-            if (str.length() <= 1) {
-                bz = false;
-                continue;
-            }
-        }
-        System.out.println(bz);
+        System.out.println(list.get(list.size()-1));
 
     }
 
