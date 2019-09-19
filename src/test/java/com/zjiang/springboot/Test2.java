@@ -18,13 +18,16 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class Test2 {
     public static void main(String[] args) {
-        int vernierInt = 2019050600;
-        if (String.valueOf(vernierInt).substring(8).equals("00")) {
-            String strPath = "D:\\Tencent Files\\";
-            File file = new File(strPath);
-            if (!file.exists()) {
-                file.mkdirs();
-            }
-        }
+//        int vernierInt = 2019050600;
+//        if (String.valueOf(vernierInt).substring(8).equals("00")) {
+//            String strPath = "D:\\Tencent Files\\";
+//            File file = new File(strPath);
+//            if (!file.exists()) {
+//                file.mkdirs();
+//            }
+//        }
+        Integer num=555;
+        System.out.println(num==555);
+
     }
 }

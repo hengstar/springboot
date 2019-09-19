@@ -1,9 +1,12 @@
 package com.zjiang.springboot.controller;
 
+import com.zjiang.springboot.dto.ResponseDto;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiImplicitParam;
+import io.swagger.annotations.ApiImplicitParams;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
-import com.zjiang.springboot.dto.ResponseDto;
 
 /**
  * 
@@ -16,11 +19,18 @@ import com.zjiang.springboot.dto.ResponseDto;
  * <p>修改历史记录：</p>
  * ====================================================================<br>
  */
+@Api(tags = "HelloWord接口")
 @RestController
 // @EnableAutoConfiguration
 public class HelloController {
 
     @RequestMapping("/hello")
+    @ApiOperation("hello word")
+    @ApiImplicitParams({
+            @ApiImplicitParam(name = "username", value = "用户名", defaultValue = "李四"),
+            @ApiImplicitParam(name = "address", value = "用户地址", defaultValue = "深圳", required = true)
+    }
+    )
     public String hello() {
         return "hello word";
     }
