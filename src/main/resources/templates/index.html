@@ -1,10 +1,46 @@
 <!DOCTYPE html>
-<html>
-<head lang="en">
-<meta charset="UTF-8" />
-<title></title>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>风水占卜</title>
 </head>
-<body>
-<h2>hhahahahahahaha</h2>
+<script src="https://cdn.bootcss.com/jquery/1.10.2/jquery.min.js">
+</script>
+<script type="text/javascript">
+    function postList() {
+        $.ajax({
+            type: "post",
+            url: "http://localhost:8080/gettoddler",
+            contentType: "application/json;charset=UTF-8",
+            crossDomain:true,
+            async: false,
+            success: function (data) {
+                var html='';
+                // alert(data.hexagramsNames);
+                // alert(data.guaci);
+                // alert(data.inference);
+                $(".toddler").empty();
+                html+='<br>"卦象：" '+ (data.hexagramsNames) +'<br>'+  (data.guaci) +'<br>'+  (data.inference);
+                $(".toddler").append(html);
+            },
+            error: function (msg) {
+                console.log(msg);
+            }
+
+        });
+        return false;
+    }
+</script>
+<body background="toddler.jpg" style=" background-repeat:no-repeat ;
+background-size:100% 100%;background-attachment: fixed;">
+
+<div style="color: #fff220;font-family: 方正小篆体;"><h2>上善若水，水善利万物而不争，处众人之所恶，故几于道。</h2></div>
+<div style="color: #fff220;font-family: 方正小篆体;"><h2>居善地，心善渊，与善仁，言善信，政善治，事善能，动善时，夫唯不争，故无尤。</h2></div>
+<div style="color: #fff220;font-family: 方正小篆体;"><h2>昔之得一者，天得一以清，地得一以宁，神得一以灵，谷得一以盈，万物得一以生，候王得一以为天下贞，其致一也，天无以清将恐裂，地无以宁将恐发（废），神无以灵将恐歇，谷无以盈将恐竭，万物无以生将恐灭，候王无以贞将恐蹶。故贵以贱为本，高以下为基。是以候王自称孤寡不谷，此以贱为本也。非乎？故致数舆无舆，不欲禄禄如玉，珞珞如石。</h2></div>
+<!--<input type="button" value="测试你的命运" onclick="postList()"/>-->
+<img src="luopan.png" style="width: 100px" onclick="postList()">
+<span style="color: #4fff33;font-family: 方正小篆体;font-size: 100px">点击罗盘生成你的今日运势</span>
+<span class="toddler" style="color: #ff030d;font-family: 方正行楷繁体;font-size: 50px"></span>
 </body>
 </html>

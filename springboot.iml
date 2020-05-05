@@ -11,7 +11,23 @@
   </component>
   <component name="FacetManager">
     <facet type="Spring" name="Spring">
-      <configuration />
+      <configuration>
+        <fileset id="fileset" name="Spring Application Context" removed="false">
+          <file>file://$MODULE_DIR$/src/main/java/com/zjiang/springboot/APP.java</file>
+          <file>file://$MODULE_DIR$/src/main/java/com/zjiang/toddler/CorsConfig.java</file>
+          <file>file://$MODULE_DIR$/src/main/java/com/zjiang/springboot/config/MybatisPlusConfig.java</file>
+          <file>file://$MODULE_DIR$/src/main/java/com/zjiang/springboot/config/SwaggerConfig.java</file>
+          <file>file://$MODULE_DIR$/src/main/java/com/zjiang/toddler/ToddlerAPP.java</file>
+          <file>jar://H:/apache-maven-3.6.0/m2/repositories/io/springfox/springfox-schema/2.9.2/springfox-schema-2.9.2.jar!/springfox/documentation/schema/configuration/ModelsConfiguration.class</file>
+          <file>file://H:/apache-maven-3.6.0/m2/repositories/io/springfox/springfox-schema/2.9.2/springfox-schema-2.9.2.jar</file>
+          <file>jar://H:/apache-maven-3.6.0/m2/repositories/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/SpringfoxWebMvcConfiguration.class</file>
+          <file>file://H:/apache-maven-3.6.0/m2/repositories/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar</file>
+          <file>jar://H:/apache-maven-3.6.0/m2/repositories/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar!/springfox/documentation/swagger/configuration/SwaggerCommonConfiguration.class</file>
+          <file>file://H:/apache-maven-3.6.0/m2/repositories/io/springfox/springfox-swagger-common/2.9.2/springfox-swagger-common-2.9.2.jar</file>
+          <file>jar://H:/apache-maven-3.6.0/m2/repositories/io/springfox/springfox-swagger2/2.9.2/springfox-swagger2-2.9.2.jar!/springfox/documentation/swagger2/configuration/Swagger2DocumentationConfiguration.class</file>
+          <file>file://H:/apache-maven-3.6.0/m2/repositories/io/springfox/springfox-swagger2/2.9.2/springfox-swagger2-2.9.2.jar</file>
+        </fileset>
+      </configuration>
     </facet>
     <facet type="web" name="Web">
       <configuration>
@@ -24,7 +40,7 @@
       </configuration>
     </facet>
   </component>
-  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_6">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
     <output url="file://$MODULE_DIR$/target/classes" />
     <output-test url="file://$MODULE_DIR$/target/test-classes" />
     <content url="file://$MODULE_DIR$">
@@ -36,7 +52,24 @@
     </content>
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="inheritedJdk" />
-    <orderEntry type="library" name="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER" level="application" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$APPLICATION_HOME_DIR$/lib/hamcrest-core-1.3.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-web:1.5.7.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter:1.5.7.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot:1.5.7.RELEASE" level="project" />
@@ -122,5 +155,12 @@
     <orderEntry type="library" name="Maven: org.springframework.plugin:spring-plugin-metadata:1.2.0.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.mapstruct:mapstruct:1.2.0.Final" level="project" />
     <orderEntry type="library" name="Maven: io.springfox:springfox-swagger-ui:2.9.2" level="project" />
+    <orderEntry type="library" name="Maven: org.jsoup:jsoup:1.10.2" level="project" />
+    <orderEntry type="library" name="Maven: asm:asm:3.3.1" level="project" />
+    <orderEntry type="library" name="Maven: cglib:cglib:2.2" level="project" />
+    <orderEntry type="library" name="Maven: cglib:cglib-nodep:2.2" level="project" />
+    <orderEntry type="library" name="Maven: redis.clients:jedis:2.9.0" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.commons:commons-pool2:2.4.2" level="project" />
+    <orderEntry type="library" name="Maven: com.alibaba:fastjson:1.2.47" level="project" />
   </component>
 </module>
